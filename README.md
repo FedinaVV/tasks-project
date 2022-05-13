@@ -1,4 +1,4 @@
-# project-vue3
+# tasks-project-vue3
 
 ## Project setup
 ```

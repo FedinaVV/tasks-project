@@ -1,0 +1,99 @@
+@import "src/styles/NullStyles.scss";
+
+.tasks {
+  font-size: 18px;
+  padding: 15px ;
+  border: 2px solid #077e79;
+  margin: 15px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-form{display: flex; flex-direction: column}
+.task-heading{margin-bottom: 20px}
+.task-btn{
+  padding: 7px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #10a18c;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px #999;
+}
+.task-btn:hover {background-color: #0b574f
+}
+
+.task-btn:active {
+  background-color: #0b574f;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+.task-input{
+  border: 1px solid #0b574f;
+  padding: 10px;
+  margin: 15px 15px;
+  border-radius: 5px;
+}
+.task-btn__btn-form{
+  align-self: flex-end;
+  margin: 15px 15px;
+}
+.task__empty{
+  font-size: 24px;
+  text-align: center;
+  color: #0b574f;
+}
+
+.dialog-window{
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(30, 213, 193, 0.43);
+  display: flex;
+
+}
+.dialog-window__content{
+  margin: auto;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 30px;
+}
+.createTask__container{
+  text-align: center;
+}
+.dialog_heading{
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+}
+.dialog_btn{
+  margin: 10px 0 20px 0
+}
+.app__btns{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.task-list-item{
+  display: inline-block;
+  margin-right: 10px;
+}
+.task-list-enter-active,
+.task-list-leave-active{
+  transition: all 0.4s ease;
+}
+
+.task-list-enter-from,
+.task-list-leave-to{
+  opacity: 0;
+  transform: translateY(30px);
+}
+.task-list-move{
+  transition: transform 0.4s ease;
+}
